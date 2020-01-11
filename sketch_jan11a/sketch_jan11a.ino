@@ -9,10 +9,10 @@
   int y;
   char msg;
   String c = "";
-  char x_char;
-  char y_char;
+  String x_char = "";
+  String y_char = "";
   char nextChar = 0;
-  char nextChar = 0;
+
 
 void setup() 
 {
@@ -72,13 +72,13 @@ void odczyt(char msg)
         if(nextChar = "y")
         {
           y_char += msg;
-          nextChar = "";
+          nextChar = 0;
         }
       }
     }
-    x = toInt(x_char);
-    y = toInt(y_char);
-    c = 0;
+    x = x_char.toInt();
+    y = y_char.toInt();
+    c = "";
   }
   return 0;
 }
